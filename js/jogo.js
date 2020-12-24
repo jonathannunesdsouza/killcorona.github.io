@@ -16,6 +16,8 @@ function posicaoRandomica() {
     //remover corona anterior (caso exista)
     if (document.getElementById('corona')) {
         document.getElementById('corona').remove()
+
+        document.getElementById('vida1').src = "mascara_desativada.png"
     }
 
 
@@ -36,6 +38,9 @@ function posicaoRandomica() {
     corona.style.top = posicaoY + 'px'
     corona.style.position = 'absolute'
     corona.id = 'corona'
+    corona.onclick = function() {
+        this.remove()
+    }
 
     document.body.appendChild(corona)
 
