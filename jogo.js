@@ -1,5 +1,6 @@
 var altura = 0
 var largura = 0
+var vidas = 1
 
 //função encarregada de ajustar o tamanho do palco/cenário do jogo de acordo com a resolução da tela do dispositivo, está função está sendo
 //chamada no evento onresize na tag body
@@ -17,7 +18,13 @@ function posicaoRandomica() {
     if (document.getElementById('corona')) {
         document.getElementById('corona').remove()
 
-        document.getElementById('vida1').src = "imagens/mascara_desativada.png"
+        if (vidas > 3) {
+            window.location.href = 'fim_de_jogo.html'
+        } else {
+           document.getElementById('vida' + vidas).src = "imagens/mascara_desativada.png"
+           vidas++ 
+        }
+        
     }
 
 
