@@ -17,7 +17,7 @@ function posicaoRandomica() {
     if (document.getElementById('corona')) {
         document.getElementById('corona').remove()
 
-        document.getElementById('vida1').src = "mascara_desativada.png"
+        document.getElementById('vida1').src = "imagens/mascara_desativada.png"
     }
 
 
