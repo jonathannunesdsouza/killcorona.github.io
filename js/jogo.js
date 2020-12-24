@@ -12,6 +12,13 @@ function ajustarTamanhoPalcoJogo() {
 ajustarTamanhoPalcoJogo()
 
 function posicaoRandomica() {
+
+    //remover corona anterior (caso exista)
+    if (document.getElementById('corona')) {
+        document.getElementById('corona').remove()
+    }
+
+
     var posicaoX = Math.floor(Math.random() * largura) - 90
     var posicaoY = Math.floor(Math.random() * altura) - 90
 
@@ -28,6 +35,8 @@ function posicaoRandomica() {
     corona.style.left = posicaoX + 'px'
     corona.style.top = posicaoY + 'px'
     corona.style.position = 'absolute'
+    corona.id = 'corona'
+
     document.body.appendChild(corona)
 
 
