@@ -2,6 +2,18 @@ var altura = 0
 var largura = 0
 var vidas = 1
 var tempo = 10
+var criaCoronaTempo = 1500
+
+var nivel = window.location.href.search
+nivel = nivel.replace('?', '')
+
+if (nivel === 'normal') {
+    criaCoronaTempo = 1500
+} else if (nivel === 'dificil') {
+    criaCoronaTempo = 1000
+} else if (nivel === 'chucknorris') {
+    criaCoronaTempo = 750
+}
 
 //função encarregada de ajustar o tamanho do palco/cenário do jogo de acordo com a resolução da tela do dispositivo, está função está sendo
 //chamada no evento onresize na tag body
