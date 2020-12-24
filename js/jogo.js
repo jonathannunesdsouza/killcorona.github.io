@@ -24,9 +24,27 @@ function posicaoRandomica() {
 
     var corona = document.createElement('img')
     corona.src = 'imagens/corona.png'
-    corona.className = 'corona1'
+    corona.className = tamanhoRandomico()
     corona.style.left = posicaoX + 'px'
     corona.style.top = posicaoY + 'px'
     corona.style.position = 'absolute'
     document.body.appendChild(corona)
+
+
+}
+
+function tamanhoRandomico() {
+    var classe = Math.floor(Math.random() * 4)
+    
+    switch(classe) {
+        case 0:
+            return 'corona1'
+        case 1: 
+            return 'corona2'
+        case 2:
+            return 'corona3'
+        case 3:
+            return 'corona4'
+    }
+
 }
