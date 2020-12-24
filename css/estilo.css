@@ -4,6 +4,9 @@
 
 /* CRIANDO CENÁRIO
 ----------------*/
+html {
+    cursor: url(../imagens/mata_corona.png)30 30, auto;
+}
 
 .painel {
     position: absolute;
