@@ -24,7 +24,7 @@ function posicaoRandomica() {
 
     var corona = document.createElement('img')
     corona.src = 'imagens/corona.png'
-    corona.className = tamanhoRandomico()
+    corona.className = tamanhoRandomico() + ' ' + inverterLadoImagem()
     corona.style.left = posicaoX + 'px'
     corona.style.top = posicaoY + 'px'
     corona.style.position = 'absolute'
@@ -33,6 +33,7 @@ function posicaoRandomica() {
 
 }
 
+//função encarregada de criar elementos html (imagem do corona) com tamanhos randômicos
 function tamanhoRandomico() {
     var classe = Math.floor(Math.random() * 4)
     
@@ -47,4 +48,17 @@ function tamanhoRandomico() {
             return 'corona4'
     }
 
+}
+
+//função encarregada de inverter horizontalmente os elementos html (imagem do corona) de forma randômica
+function inverterLadoImagem() {
+    var classe = Math.floor(Math.random() * 2)
+    
+    switch(classe) {
+        case 0:
+            return 'ladoA'
+        case 1: 
+            return 'ladoB'
+        
+    }
 }
