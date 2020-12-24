@@ -11,10 +11,22 @@ function ajustarTamanhoPalcoJogo() {
 
 ajustarTamanhoPalcoJogo()
 
+function posicaoRandomica() {
+    var posicaoX = Math.floor(Math.random() * largura) - 90
+    var posicaoY = Math.floor(Math.random() * altura) - 90
 
-   var posicaoX = Math.floor(Math.random() * largura)
-   var posicaoY = Math.floor(Math.random() * altura)
+    posicaoX = posicaoX < 0 ? 0 : posicaoX
+    posicaoY = posicaoY < 0 ? 0 : posicaoY 
 
-   console.log(posicaoX, posicaoY)
-   
-   
+    console.log(posicaoX, posicaoY)
+    
+    //criar o elemento html de imagem
+
+    var corona = document.createElement('img')
+    corona.src = 'imagens/corona.png'
+    corona.className = 'corona1'
+    corona.style.left = posicaoX + 'px'
+    corona.style.top = posicaoY + 'px'
+    corona.style.position = 'absolute'
+    document.body.appendChild(corona)
+}
