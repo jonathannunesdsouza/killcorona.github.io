@@ -22,7 +22,13 @@
   <body onresize=ajustarTamanhoPalcoJogo()>
     
 
-    <script>posicaoRandomica()</script>
+    <script>
+      
+      setInterval(function() {
+        posicaoRandomica()
+      }, 1000)
+
+    </script>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
