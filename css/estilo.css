@@ -2,6 +2,12 @@
 * @author Jonathan D. Nunes de Souza
 */
 
+/* CRIANDO CENÁRIO
+----------------*/
+
+body {
+    background: url(../imagens/bg.jpg)no-repeat;
+}
 
 .corona1 {
     width: 50px;
