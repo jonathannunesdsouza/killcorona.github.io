@@ -5,10 +5,6 @@
 /* CRIANDO CENÁRIO
 ----------------*/
 
-body {
-    background: url(../imagens/bg.jpg)no-repeat;
-}
-
 .painel {
     position: absolute;
     width: 200px;

@@ -17,29 +17,23 @@
     <!-- Script JS-->
     <script src="jogo.js"></script>
 
-    <title>App Game - Kill Corona</title>
+    <title>Game Over - Kill Corona</title>
   </head>
-  <body onresize=ajustarTamanhoPalcoJogo()>
+  <body background="imagens/bg2.jpg">
     
-    <div class="painel">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <img src="imagens/game_over.png">
+            </div>
+        </div>
 
-      <div class="vidas">
-        <img id="vida1" src="imagens/mascara_ativa.png">
-        <img id="vida2" src="imagens/mascara_ativa.png">
-        <img id="vida3" src="imagens/mascara_ativa.png">
-      </div>
-
-      <div class="cronometro">Tempo restante?</div>
-
+        <div class="row">
+            <div class="col text-center">
+                <button onclick="window.location.href='index.html' " class="btn btn-danger btn-lg">Reiniciar</button>
+            </div>
+        </div>
     </div>
-
-    <script>
-      
-      setInterval(function() {
-        posicaoRandomica()
-      }, 1000)
-
-    </script>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
