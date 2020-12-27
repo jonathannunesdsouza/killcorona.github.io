@@ -20,3 +20,17 @@ Na tela de jogo, o jogador deve clicar em todos os "coronas" que aparecerem na t
 O jogador é redirecionado a tela de fim de partida (game over), caso deixe passar 3 "coronas" sem clica-los, desta forma, perdendo as 3 vidas disponíveis representadas como máscaras na tela de jogo.
 
 ![Screenshoot Game Over](screenshoots_projeto/screenshoot_fim_de_jogo.png)
+
+## Meta 
+
+Jonathan Douglas Nunes de Souza - [@jonathansouza] - <jonathannunes.souza98@gmail.com>
+
+[@jonathansouza]:https://www.linkedin.com/in/perfil-in/
+
+Distribuido sob licença. Veja **`LICENÇA`** para mais informações.
+
+[https://github.com/jonathannunesdsouza/jonathannunesdsouza.github.io]
+
+
+[Domine Web]:https://www.udemy.com/course/web-completo/
+[Udemy]:https://www.udemy.com/
