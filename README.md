@@ -14,3 +14,9 @@ Na tela inicial o jogador pode escolher o nível de dificuldade do jogo, sendo e
 Na tela de jogo, o jogador deve clicar em todos os "coronas" que aparecerem na tela, com o álcool gel (cursor do mouse) no durante o tempo de 30 segundos.
 
 ![Screenshoot Tela de Jogo](screenshoots_projeto/screenshoot_app.jpg)
+
+## Tela de game over (fim de partida)
+
+O jogador é redirecionado a tela de fim de partida (game over), caso deixe passar 3 "coronas" sem clica-los, desta forma, perdendo as 3 vidas disponíveis representadas como máscaras na tela de jogo.
+
+![Screenshoot Game Over](screenshoots_projeto/screenshoot_fim_de_jogo.png)
