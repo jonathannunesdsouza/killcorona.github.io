@@ -21,6 +21,19 @@ O jogador é redirecionado a tela de fim de partida (game over), caso deixe pass
 
 ![Screenshoot Game Over](screenshoots_projeto/screenshoot_fim_de_jogo.png)
 
+## Instalação
+
+Para executar o projeto localmente o repositório deve ser clonado da forma desejada:
+
+```
+git clone https://github.com/jonathannunesdsouza/killcorona.github.io.git
+```
+
+## Histórico de atualização 
+
+* 0.0.1;
+    * Lançamento inicial.
+
 ## Meta 
 
 Jonathan Douglas Nunes de Souza - [@jonathansouza] - <jonathannunes.souza98@gmail.com>
