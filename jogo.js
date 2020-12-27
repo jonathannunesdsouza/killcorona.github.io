@@ -1,5 +1,5 @@
-var altura = 0
-var largura = 0
+var altura
+var largura 
 var vidas = 1
 var tempo = 10
 var criaCoronaTempo = 1500
@@ -30,7 +30,7 @@ var cronometro = setInterval(function() {
     
     if (tempo < 0) {
         clearInterval(cronometro)
-        clearInterval(criaCorona)
+        clearInterval(criaCoronaTempo)
         window.location.href = 'vitoria.html'
     } else {
         document.getElementById('cronometro').innerHTML = tempo
@@ -55,29 +55,26 @@ function posicaoRandomica() {
 
 
     var posicaoX = Math.floor(Math.random() * largura) - 90
-    var posicaoY = Math.floor(Math.random() * altura) - 90
+	var posicaoY = Math.floor(Math.random() * altura) - 90
 
-    posicaoX = posicaoX < 0 ? 0 : posicaoX
-    posicaoY = posicaoY < 0 ? 0 : posicaoY 
+	posicaoX = posicaoX < 0 ? 0 : posicaoX
+	posicaoY = posicaoY < 0 ? 0 : posicaoY
 
-    console.log(posicaoX, posicaoY)
-    
-    //criar o elemento html de imagem
+	console.log(posicaoX, posicaoY)
 
-    var corona = document.createElement('img')
-    corona.src = 'imagens/corona.png'
-    corona.className = tamanhoRandomico() + ' ' + inverterLadoImagem()
-    corona.style.left = posicaoX + 'px'
-    corona.style.top = posicaoY + 'px'
-    corona.style.position = 'absolute'
-    corona.id = 'corona'
-    corona.onclick = function() {
-        this.remove()
-    }
+	var corona = document.createElement('img')
+	corona.src = 'imagens/corona.png'
+	corona.className = tamanhoRandomico() + ' ' + inverterLadoImagem()
+	corona.style.left = posicaoX + 'px'
+	corona.style.top = posicaoY + 'px'
+	corona.style.position = 'absolute'
+	corona.id = 'corona'
+	corona.onclick = function() {
+		this.remove()
+	}
 
-    document.body.appendChild(corona)
-
-
+	document.body.appendChild(corona)
+	
 }
 
 //função encarregada de criar elementos html (imagem do corona) com tamanhos randômicos
